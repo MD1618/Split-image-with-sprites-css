@@ -21,7 +21,7 @@ body{
   float: left;
   opacity:0;
   transform:translate3d(-300px, 0px ,-100px) rotateY(140deg);
-  transition: 2s ease-in;
+  transition: 2s ease-in, opacity 1s ease-out;
   transform-origin: left;
 
 }
@@ -42,7 +42,7 @@ body{
   margin-left:-1px;
   opacity:0;
   transform:translate3d(300px, 0px ,-100px) rotateY(-140deg);
-  transition: 2s ease-in;
+  transition: 2s ease-in, opacity 1s ease-out;
   transform-origin: right;
 
 }
