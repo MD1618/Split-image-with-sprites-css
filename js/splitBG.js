@@ -1,10 +1,12 @@
-//window.onload = function(){
-document.addEventListener("DOMContentLoaded", function(event) {
+window.onload = function(){
+
   splitSpin();
+}
+document.addEventListener("DOMContentLoaded", function(event) {
 
 
 });
-//}
+
 function splitSpin() {
 
   setTimeout(() => {
