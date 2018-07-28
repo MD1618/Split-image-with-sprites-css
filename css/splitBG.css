@@ -63,7 +63,7 @@ body{
 .bg1 {
   background: url("../images/space.jpg");
   background-position: 0px 0px;
-  background-size: 300% auto;
+  background-size: 300% 100%;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
   width:100%;
@@ -73,7 +73,7 @@ body{
   --postion2: calc(100vw/3*-1) ;
   background: url("../images/space.jpg");
   background-position: var(--postion2) 0px;
-  background-size: 300% auto;
+  background-size: 300% 100%;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
 
@@ -86,7 +86,7 @@ body{
 
   background: url("../images/space.jpg");
   background-position: var(--postion3) 0px;
-  background-size: 300% auto;
+  background-size: 300% 100%;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
   /* left:calc(100%/3*2); */
