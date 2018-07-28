@@ -6,27 +6,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 //}
 function splitSpin() {
-  let splitImgs = document.getElementsByClassName('bgCont');
 
   setTimeout(() => {
-    document.getElementsByClassName('bgCont')[0].classList.add("spinCont");
-  }, 400);
+    document.getElementsByClassName('bgCont1')[0].classList.add("rotateLeftCont");
+  }, 0);
   setTimeout(() => {
-    document.getElementsByClassName('bgCont')[1].classList.add("spinCont");
-  }, 800);
+    document.getElementsByClassName('bgCont2')[0].classList.add("spinCont");
+  }, 0);
   setTimeout(() => {
-    document.getElementsByClassName('bgCont')[2].classList.add("spinCont");
-  }, 1200);
+    document.getElementsByClassName('bgCont3')[0].classList.add("rotateRightCont");
+  }, 0);
 
   setTimeout(() => {
-    document.getElementsByClassName('bgCont')[0].classList.remove("spinCont");
+    document.getElementsByClassName('bgCont1')[0].classList.remove("rotateLeftCont");
   }, 5000);
   setTimeout(() => {
-    document.getElementsByClassName('bgCont')[1].classList.remove("spinCont");
-  }, 5800);
+    document.getElementsByClassName('bgCont2')[0].classList.remove("spinCont");
+  }, 5000);
   setTimeout(() => {
-    document.getElementsByClassName('bgCont')[2].classList.remove("spinCont");
-  }, 6200);
+    document.getElementsByClassName('bgCont3')[0].classList.remove("rotateRightCont");
+  }, 5000);
   setTimeout(() => {
     splitSpin();
 

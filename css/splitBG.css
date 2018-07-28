@@ -13,20 +13,52 @@ body{
   left:0;
   width:100%;
   height:100vh;
+  perspective: 500px;
 }
-.bgCont{
+.bgCont1{
   width:calc(100%/3);
   height:100vh;
   float: left;
-  /* opacity:0.5; */
+  opacity:0;
+  transform: rotateY(-90deg);
+  transition: 3s ease-in-out;
+
+}
+.bgCont2{
+  width:calc(100%/3);
+  height:100vh;
+  float: left;
+  opacity:0;
   transform: rotateX(90deg);
-  transition: 3s ease-out;
+  transition: 3s ease-in-out;
+
+}
+.bgCont3{
+  width:calc(100%/3);
+  height:100vh;
+  float: left;
+  opacity:0;
+  transform: rotateY(90deg);
+  transition: 3s ease-in-out;
 
 }
 .spinCont{
-  transform: rotateX(0deg);
-  /* opacity:1; */
-  transition: 3s ease-out;
+  transform:  rotateX(0deg);
+  opacity:1;
+  transition: 3s ease-in-out;
+}
+.rotateRightCont{
+  transform:  rotateY(0deg);
+  transform-origin: right;
+  opacity:1;
+  transition: 3s ease-in-out;
+}
+.rotateLeftCont{
+  transform: rotateY(0deg);
+  transform-origin: left;
+
+  opacity:1;
+  transition: 3s ease-in-out;
 }
 .bg1 {
   background: url("../images/space.jpg");
