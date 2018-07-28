@@ -12,8 +12,8 @@ body{
   top:0;
   left:0;
   width:100%;
-  height:100vh;
-  perspective: 500px;
+  /* height:auto; */
+  perspective: 300px;
 }
 .bgCont1{
   width:calc(100%/3);
@@ -37,6 +37,7 @@ body{
   width:calc(100%/3);
   height:100vh;
   float: left;
+  margin-left:-1px;
   opacity:0;
   transform: rotateY(90deg);
   transition: 3s ease-in-out;
@@ -63,33 +64,34 @@ body{
 .bg1 {
   background: url("../images/space.jpg");
   background-position: 0px 0px;
-  background-size: 300% 100%;
+  background-size: 300% ;
+
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
   width:100%;
-  height:100vh;
+  height:100%;
 }
 .bg2 {
   --postion2: calc(100vw/3*-1) ;
   background: url("../images/space.jpg");
   background-position: var(--postion2) 0px;
-  background-size: 300% 100%;
+  background-size: 300% ;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
-
+  background-clip: content-box;
   /* left:calc(100%/3); */
   width:100%;
-  height:100vh;
+  height:100%;
 }
 .bg3 {
   --postion3: calc(100vw/3*-2) ;
 
   background: url("../images/space.jpg");
   background-position: var(--postion3) 0px;
-  background-size: 300% 100%;
+  background-size: 300% ;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
   /* left:calc(100%/3*2); */
   width:100%;
-  height:100vh;
+  height:100%;
 }
