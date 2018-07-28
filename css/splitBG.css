@@ -20,8 +20,9 @@ body{
   height:100vh;
   float: left;
   opacity:0;
-  transform: rotateY(-90deg);
-  transition: 3s ease-in-out;
+  transform:translate3d(-300px, 0px ,-100px) rotateY(140deg);
+  transition: 2s ease-in;
+  transform-origin: left;
 
 }
 .bgCont2{
@@ -29,8 +30,9 @@ body{
   height:100vh;
   float: left;
   opacity:0;
-  transform: rotateX(90deg);
+  transform: translateZ(100px) rotateX(90deg);
   transition: 3s ease-in-out;
+
 
 }
 .bgCont3{
@@ -39,27 +41,33 @@ body{
   float: left;
   margin-left:-1px;
   opacity:0;
-  transform: rotateY(90deg);
-  transition: 3s ease-in-out;
+  transform:translate3d(300px, 0px ,-100px) rotateY(-140deg);
+  transition: 2s ease-in;
+  transform-origin: right;
 
 }
 .spinCont{
-  transform:  rotateX(0deg);
+  transform: translateZ(0px) rotateX(0deg);
   opacity:1;
   transition: 3s ease-in-out;
 }
 .rotateRightCont{
-  transform:  rotateY(0deg);
-  transform-origin: right;
+  transform:translate3d(0px, 0px ,0px)  rotateY(0deg);
+  /* transform-origin: right; */
+  /* transform-origin: 0 0; */
   opacity:1;
-  transition: 3s ease-in-out;
+  transition: 2s ease-in-out;
+  transition-delay: 1s;
 }
 .rotateLeftCont{
-  transform: rotateY(0deg);
-  transform-origin: left;
+  transform:translate3d(0px, 0px ,0px)  rotateY(0deg);
+  /* transform-origin: 0 0; */
+  /* transform-origin: left; */
 
   opacity:1;
-  transition: 3s ease-in-out;
+  transition: 2s ease-in-out;
+  transition-delay: 1s;
+
 }
 .bg1 {
   background: url("../images/space.jpg");
